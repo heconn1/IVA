@@ -1,15 +1,17 @@
-<TeXmacs|2.1.2>
+<TeXmacs|1.99.20>
 
 <style|generic>
 
 <\body>
-  Exercise 2.6.5
+  <next-line>Exercise 2.6.5
+
+  Compute S(f, g) using the lex order.
 
   <\session|sage|default>
     <\output>
-      SageMath version 9.0, Release Date: 2020-01-01
+      SageMath version 9.2, Release Date: 2020-10-24
 
-      \;
+      \ \ \ \ \ \ \ \ 
     </output>
 
     <\unfolded-io>
@@ -23,7 +25,7 @@
     <\input>
       \<gtr\>\<gtr\>\<gtr\>\ 
     <|input>
-      load("~/Desktop/buch.sage")
+      load("~/Desktop/IVA/buch.sage")
     </input>
 
     <\input>
@@ -35,7 +37,7 @@
     <\input>
       \<gtr\>\<gtr\>\<gtr\>\ 
     <|input>
-      # (a)
+      #(a)
     </input>
 
     <\input>
@@ -47,9 +49,9 @@
     <\unfolded-io>
       \<gtr\>\<gtr\>\<gtr\>\ 
     <|unfolded-io>
-      Spoly(f, g, 0) \ \ # 0 for lex order
+      Spoly(f, g, 0) # 0 for lex order
     <|unfolded-io>
-      <math|<frac|1|4>*<space|0.17em><around*|(|4*<space|0.17em>x<rsup|2>*z-7*<space|0.17em>y<rsup|2>|)>*y*z-<around*|(|3*<space|0.17em>x*z<rsup|4>+x*y*z<rsup|2>|)>*x>
+      <math|-12*<space|0.17em>x<rsup|2>*z<rsup|4>-7*<space|0.17em>y<rsup|3>*z>
     </unfolded-io>
 
     <\input>
@@ -75,7 +77,7 @@
     <|unfolded-io>
       Spoly(f, g, 0)
     <|unfolded-io>
-      <math|-<frac|1|3>*<space|0.17em><around*|(|3*<space|0.17em>x*z<rsup|2>-y|)>*x<rsup|3>*y+<around*|(|x<rsup|4>*y-z<rsup|2>|)>*z<rsup|2>>
+      <math|x<rsup|3>*y<rsup|2>-3*<space|0.17em>z<rsup|4>>
     </unfolded-io>
 
     <\input>
@@ -127,7 +129,7 @@
     <|unfolded-io>
       Spoly(f, g, 0)
     <|unfolded-io>
-      <math|-<around*|(|z<rsup|2>-3*<space|0.17em>z|)>*x*y+<around*|(|z<rsup|3>+x*y|)>*z<rsup|2>>
+      <math|z<rsup|5>+3*<space|0.17em>x*y*z>
     </unfolded-io>
 
     <\input>
@@ -141,6 +143,7 @@
 <\initial>
   <\collection>
     <associate|font-base-size|14>
+    <associate|info-flag|minimal>
     <associate|page-medium|paper>
   </collection>
 </initial>
